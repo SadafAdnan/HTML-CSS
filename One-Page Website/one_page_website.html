@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadaf Adnan</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #3e8e41, #6be77d);
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Header Section */
+        header {
+            background: url('https://via.placeholder.com/1600x800') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            animation: fadeIn 2s ease-out 0.5s;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Image Gallery */
+        #images img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        #images img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Form */
+        form input, form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+
+        form button {
+            padding: 15px 25px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Video Section */
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#images">Images</a>
+    <a href="#contact">Contact</a>
+    <a href="#video">Video</a>
+</nav>
+
+<!-- Header Section -->
+<header id="home">
+    <h1>Welcome to My One-Page Website</h1>
+    <p>I've made it super cool with some simple animations!!</p>
+</header>
+
+<!-- Home Section -->
+<section id="images">
+    <h2>Image Gallery</h2>
+    <div>
+        <img src="https://cdn.pixabay.com/photo/2025/11/09/17/47/mushrooms-9946579_1280.jpg" alt="Image 1">
+        <img src="https://cdn.pixabay.com/photo/2025/11/09/17/47/mushrooms-9946579_1280.jpg" alt="Image 2">
+        <img src="https://cdn.pixabay.com/photo/2025/11/09/17/47/mushrooms-9946579_1280.jpg" alt="Image 3">
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Video Section -->
+<section id="video">
+    <h2>Watch Our Cool Video</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r94Z-5jphaI?si=2p7Yeh_eScVjwgYB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 My Website | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
